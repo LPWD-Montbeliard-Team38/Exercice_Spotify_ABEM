@@ -3,16 +3,35 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: $text-font-family;
+}
+p{
+    color: $white;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: $white;
+    font-size: calc(25px + 2.5vw);
+    font-weight: 700;
+    margin: 0;
 }
 
+h3{
+    color: $white;
+    font-size: calc(20px + 1.5vw);
+    font-weight: 700;
+    margin: 0;
 
-
-
+}
 
 
 #container {
     height: 100%;
     width: 100%;
-    margin-top: 80px;
     background-color: $colorBkgGeneral;
+}
+
+.m-ablumtype {
+    height: 1200px;
 }

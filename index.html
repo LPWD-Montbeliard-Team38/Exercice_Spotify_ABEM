@@ -45,10 +45,32 @@
     </header>
     <!--END navigation area starts-->
 
+    <!--CONTAINER-->
     <div id="container">
-        <section>
-            <p>Coucou j'aime JUL et Nicolass</p>
+
+        <!--Artistes-->
+        <section class="m-artiste">
+            <article class="m-artiste__information">
+                <p>55 754 300 Auditeurs par mois</p>
+                <h2>The Weeknd</h2>
+                <div>
+                    <button type="button" class="a-buttonImportant">Lecture</button>
+                    <button type="button" class="a-button">S'abonner</button>
+                </div>
+            </article>
         </section>
+             <!--END Artistes-->
+             <!-- Albums -->
+             <section class="m-album">
+                <h3>Album</h3>
+                <article class="m-ablum__information">
+                    <div class="m-ablumtype">
+                        <div><img></div>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </article>
+            </section>
     </div>
 
 
@@ -60,6 +82,28 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
 
+<script>
+     $(document).ready(function() {
+
+        var position = $(window).scrollTop();
+     $(window).scroll(function() {
+                if ($(this).scrollTop() < 50) {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > position) {
+
+                        $('.m-navbar').css("background-color", "#121212");
+                    } else {
+
+                        $('.m-navbar').css("background-color", "transparent");
+                    }
+                    position = scroll;
+
+                }
+
+
+            });
+        });
+</script>
 
 </body>
 
