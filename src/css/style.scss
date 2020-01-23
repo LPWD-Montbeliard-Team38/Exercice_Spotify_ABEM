@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.m-navbar {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    
+    &__logo{
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        margin-left: 5%;
+        a img{
+            height: 40px;
+            filter:invert(100%);
+        }
+    }
+
+}
+
+
+
+/* Pour une implémentation spécifique */
+.a-menuBlock__item.-green {
+    background-color: #00C81b;
+}
+  /* Pour une implémentation non spécifique */
+.-green {
+    background-color: #00C81b;
+}

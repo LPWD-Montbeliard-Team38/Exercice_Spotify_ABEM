@@ -1,0 +1,52 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.m-navbar {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m-navbar__logo {
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-left: 5%;
+}
+
+.m-navbar__logo a img {
+  height: 40px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+/* Pour une implémentation spécifique */
+.a-menuBlock__item.-green {
+  background-color: #00C81b;
+}
+
+/* Pour une implémentation non spécifique */
+.-green {
+  background-color: #00C81b;
+}
+/*# sourceMappingURL=style.css.map */
