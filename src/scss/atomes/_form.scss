@@ -3,7 +3,10 @@
 border-radius: 5px;
 padding-bottom: 15px;
 padding-top: 15px;
+padding-left: 10px;
 width: 100%;
-margin-bottom: 7%;
-
+margin-bottom: 8%;
+font-size: calc(12px + 0.2vw);
+font-family: $text-font-family;
+ color: $gray2;;
 }
