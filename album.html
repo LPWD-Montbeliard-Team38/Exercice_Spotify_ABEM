@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="Spotify est un service de musique qui vous donne accès à des millions de titres." />
+    <meta name="keywords" content="Musique, lecteur, streaming, Atomic Design, Exercice" />
+    <meta name="author" content="Florian Mossler, Julien Cantenot" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Album The Weeknd</title>
+
+    <!--==========Favicon==========-->
+
+    <link rel="icon" href="src/favicon/favicon (2).ico" />
+
+    <!--========== Fonts ==========-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!--Theme css-->
+    <link rel="stylesheet" href="src/css/main.css" />
+</head>
+
+<body>
+    <!--navigation area starts-->
+    <header>
+        <nav class="m-navbar">
+            <h1 class="m-navbar__logo -size"><a href="#" alt="Spotify"><img src="src/img/Logo/Spotify_logo_black.png"></a></h1>
+
+            <div class="m-navbar__items m-buttonsGroup -size">
+                <a class="a-title" href="#">Albums</a>
+                <a class="a-title" href="#">Contact</a>
+                <button class="a-button -bkgBlack" type="button">
+                    Connexion
+                </button>
+                <button class="a-button -bkgBlack" type="button">
+                    Prénom Nom
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!--END navigation area starts-->
+
+    <!--CONTAINER-->
+    <div id="container">
+        <!-- Albums -->
+        <section>
+            <div class="m-card">
+
+            </div>
+            <h3>Album</h3>
+            <button class="a-buttonImportant">Lecture</button>
+            <p>2013 - 8 titres</p>
+        </section>
+        <section>
+            <div>
+                <p>titre01</p>
+                <p>The Weeknd</p>
+            </div>
+            <div>
+                <p>durée</p>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+
+<script>
+     $(document).ready(function() {
+
+        var position = $(window).scrollTop();
+     $(window).scroll(function() {
+                if ($(this).scrollTop() < 50) {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > position) {
+
+                        $('.m-navbar').addClass("-animationScrollB");
+                        $('.m-navbar').removeClass("-animationScrollT");
+                    } else {
+
+                        $('.m-navbar').addClass("-animationScrollT");
+                        $('.m-navbar').removeClass("-animationScrollB");
+                    }
+                    position = scroll;
+
+                }
+
+
+            });
+        });
+</script>
+
+</body>
+
+</html>
