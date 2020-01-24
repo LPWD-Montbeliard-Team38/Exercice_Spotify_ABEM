@@ -237,24 +237,32 @@ h3 {
 }
 
 .o-container {
-  position: relative;
   display: flex;
-  margin-top: 200px;
+  padding-top: 150px;
 }
 
 .o-sectionD {
   width: 60%;
   padding: 0 5px 5px 5px;
+  margin-right: 50px;
 }
 .o-sectionD .m-infoMusique {
   display: flex;
   justify-content: space-between;
-  vertical-align: middle;
+  margin-bottom: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid #707070;
 }
-.o-sectionD .m-infoMusique .m-titre {
+.o-sectionD .m-infoMusique__titre {
   display: flex;
+}
+.o-sectionD .m-infoMusique__titre .a-contenu2 {
+  margin-left: 15px;
+  color: #707070;
+  font-size: calc(14px + 0.1vw);
+}
+.o-sectionD p {
+  padding: 0 5px;
 }
 
 .o-sectionG {
