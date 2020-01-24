@@ -41,3 +41,36 @@
     }
 
 }
+
+
+//Animation scrollBar
+.-animationScrollT {
+    animation-duration: 0.4s;
+    animation-name: colorT;
+    background-color: transparent;
+  }
+  .-animationScrollB {
+    animation-duration: 0.8s;
+    animation-name: colorB;
+    background-color:$colorBkgGeneral;
+  }
+  
+  @keyframes colorT {
+    from {
+      background-color: $colorBkgGeneral;
+    }
+  
+    to {
+        background-color: transparent;
+    }
+  }
+  @keyframes colorB {
+    from {
+        background-color: transparent;
+    }
+  
+    to {
+
+        background-color: $colorBkgGeneral;
+    }
+  }

@@ -91,10 +91,12 @@
                     var scroll = $(window).scrollTop();
                     if (scroll > position) {
 
-                        $('.m-navbar').css("background-color", "#121212");
+                        $('.m-navbar').addClass("-animationScrollB");
+                        $('.m-navbar').removeClass("-animationScrollT");
                     } else {
 
-                        $('.m-navbar').css("background-color", "transparent");
+                        $('.m-navbar').addClass("-animationScrollT");
+                        $('.m-navbar').removeClass("-animationScrollB");
                     }
                     position = scroll;
 
