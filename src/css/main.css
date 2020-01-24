@@ -21,7 +21,7 @@ h2 {
 
 h3 {
   color: white;
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(18px + 1.2vw);
   font-weight: 700;
   margin: 0;
 }
@@ -32,18 +32,14 @@ h3 {
   background-color: #121212;
 }
 
-.m-ablumtype {
-  height: 1200px;
-}
-
 .a-button {
   font-family: "Source sans pro";
   background-color: transparent;
   color: white;
   border: 1px solid white;
   border-radius: 100px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   outline: none;
@@ -57,11 +53,12 @@ h3 {
 .a-buttonImportant {
   font-family: "Source sans pro";
   background-color: #1326D2;
+  border: 1px solid #1326D2;
   color: white;
   border: none;
   border-radius: 100px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   outline: none;
@@ -160,4 +157,27 @@ h3 {
   margin-top: 80px;
   height: 60%;
   display: grid;
+}
+.m-artiste__information button {
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.o-album {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.m-album {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 5%;
+}
+
+.m-ablumtype {
+  height: 1200px;
 }
