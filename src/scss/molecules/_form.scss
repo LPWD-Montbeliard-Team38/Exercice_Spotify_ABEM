@@ -1,0 +1,35 @@
+.t-contact-form{
+    height: 100%;
+}
+.o-contact-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+.m-form-input{
+    width: 80%;
+    max-width: 500px;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    p{
+        position: absolute;
+        left: 0;
+        top: -40px;
+        font-size: 30px;
+    }
+    .m-sendForm{
+        button{
+        background-color: white;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        font-size: 30px;
+    }
+    }
+}
