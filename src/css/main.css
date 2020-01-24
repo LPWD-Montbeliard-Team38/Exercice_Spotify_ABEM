@@ -96,6 +96,9 @@ a {
   font-weight: 600;
   margin-top: 3%;
 }
+.a-titleArtiste a {
+  text-decoration: none;
+}
 
 .a-imagesAlbum img {
   width: 100%;
