@@ -29,6 +29,7 @@ h3 {
 
 #container {
   width: 100%;
+  margin-bottom: 90px;
   background-color: #121212;
 }
 
@@ -290,7 +291,7 @@ h3 {
 
 .o-container {
   display: flex;
-  padding-top: 150px;
+  padding: 150px 0 20px 0;
 }
 
 .o-sectionD {
@@ -301,9 +302,13 @@ h3 {
 .o-sectionD .m-infoMusique {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  padding-top: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid #707070;
+  cursor: pointer;
+}
+.o-sectionD .m-infoMusique:hover {
+  background-color: #393939;
 }
 .o-sectionD .m-infoMusique__titre {
   display: flex;

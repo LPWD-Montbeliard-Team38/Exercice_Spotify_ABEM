@@ -5,9 +5,14 @@
     .m-infoMusique{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        padding-top: 20px;
         padding-bottom: 5px;
-        border-bottom: 1px solid $gray4; 
+        border-bottom: 1px solid $gray4;
+        cursor: pointer;
+        &:hover{
+            background-color: $grayplay;
+        }
+        
         &__titre{
             display: flex;
             .a-contenu2{
