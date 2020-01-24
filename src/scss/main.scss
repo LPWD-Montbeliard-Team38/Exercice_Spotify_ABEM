@@ -4,6 +4,8 @@
 
 @import"./_atomes.scss";
 
-@import"molecules/navbar.scss";
-@import"molecules/artistes.scss";
-@import"molecules/album.scss";
+@import"molecules/_navbar.scss";
+@import"molecules/_artistes.scss";
+@import"molecules/_album.scss";
+
+@import"organismes/_album.scss";
