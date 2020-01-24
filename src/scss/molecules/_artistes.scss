@@ -14,12 +14,13 @@
     &__information{
         margin-left: 10%;
         margin-top: 80px;
-
+        width: -webkit-fill-available;
         height: 60%;
         display: grid;
         button{
-            margin-right: 5%;
+            margin-right: 4%;
             cursor: pointer;
+            width: 170px;
     }
     }
 }
