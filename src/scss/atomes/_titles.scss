@@ -3,7 +3,7 @@
     text-decoration: none;
     font-weight: 400;
     margin-right: 3%;
-    font-size: calc(14px + 0.3vw);
+    font-size: $p;
 }
 
 .a-titleAlbum{
@@ -14,7 +14,7 @@
 }
 .a-titleArtiste{
     color: $gray2;
-    font-size: calc(14px + 0.3vw);;
+    font-size: $p;;
     font-weight: 600;
     margin-top: 3%;
     a {

@@ -28,7 +28,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     outline: none;
-    font-size: calc(14px + 0.3vw);
+    font-size: $p;
     font-weight: 400;
     &:hover{
         transform: scale(1.05);

@@ -2,3 +2,17 @@
     display: flex;
     padding: 150px 0 20px 0;
 }
+
+@media screen and (max-width: 640px) {
+    .o-container {
+        display: block;
+    }
+    .o-sectionD {
+        width: 90%!important;
+        margin: auto!important;
+    }
+    .o-sectionG {
+        width: 100%!important;
+        margin: auto!important;
+    }
+}

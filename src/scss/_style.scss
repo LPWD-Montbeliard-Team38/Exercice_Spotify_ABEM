@@ -10,17 +10,18 @@ p{
     color: $white;
     margin: 0;
     padding: 0;
+    font-size: $p;
 }
 h2 {
     color: $white;
-    font-size: calc(25px + 2.5vw);
+    font-size: $h2;
     font-weight: 700;
     margin: 0;
 }
 
 h3{
     color: $white;
-    font-size: calc(18px + 1.2vw);
+    font-size: $h3;
     font-weight: 700;
     margin: 0;
 }
