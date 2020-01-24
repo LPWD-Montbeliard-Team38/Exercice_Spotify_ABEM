@@ -206,7 +206,7 @@ h3 {
 }
 
 .m-ablumcard {
-  height: 1200px;
+  height: auto;
   margin-top: 5%;
   margin-bottom: 5%;
   display: inline-flex;
