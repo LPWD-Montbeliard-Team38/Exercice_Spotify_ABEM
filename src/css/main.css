@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Source sans pro";
+  background-color: #121212;
 }
 
 p {
@@ -205,7 +206,7 @@ h3 {
 }
 
 .m-ablumcard {
-  height: auto;
+  height: 1200px;
   margin-top: 5%;
   margin-bottom: 5%;
   display: inline-flex;
@@ -218,4 +219,23 @@ h3 {
   justify-content: center;
   align-content: center;
   background-color: #121212;
+}
+
+.o-container {
+  position: relative;
+  display: flex;
+  margin-top: 80px;
+}
+
+.o-sectionD {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.o-sectionG {
+  width: 40%;
+  text-align: center;
+  vertical-align: middle;
 }
