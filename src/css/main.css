@@ -176,12 +176,14 @@ h3 {
 .m-artiste__information {
   margin-left: 10%;
   margin-top: 80px;
+  width: -webkit-fill-available;
   height: 60%;
   display: grid;
 }
 .m-artiste__information button {
-  margin-right: 5%;
+  margin-right: 4%;
   cursor: pointer;
+  width: 170px;
 }
 
 .m-album {
@@ -210,6 +212,19 @@ h3 {
   margin-top: 5%;
   margin-bottom: 5%;
   display: inline-flex;
+}
+
+.m-album .-marginTop {
+  margin-top: 0% !important;
+}
+
+.m-playbar {
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background-color: #393939;
 }
 
 .o-album {
