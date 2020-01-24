@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="Spotify est un service de musique qui vous donne accès à des millions de titres." />
+    <meta name="keywords" content="Musique, lecteur, streaming, Atomic Design, Exercice" />
+    <meta name="author" content="Florian Mossler, Julien Cantenot" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Spotify - Accueil</title>
+
+    <!--==========Favicon==========-->
+
+    <link rel="icon" href="src/favicon/favicon (2).ico" />
+
+    <!--========== Fonts ==========-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+
+    <!--Theme css-->
+    <link rel="stylesheet" href="src/css/main.css" />
+</head>
+
+<body>
+    <!--navigation area starts-->
+    <header>
+        <nav class="m-navbar">
+            <h1 class="m-navbar__logo -size"><a href="#" alt="Spotify"><img src="src/img/Logo/Spotify_logo_black.png"></a></h1>
+
+            <div class="m-navbar__items m-buttonsGroup -size">
+                <a class="a-title" href="#">Albums</a>
+                <a class="a-title" href="#">Contact</a>
+                <button class="a-button -bkgBlack" type="button">
+                    Connexion
+                </button>
+                <button class="a-button -bkgBlack" type="button">
+                    Prénom Nom
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!--END navigation area starts-->
+
+    <!--CONTAINER-->
+    <div id="container" class="t-contact-form">
+
+        <!--Contact form-->
+        <form class="o-contact-form">
+            <div class="m-form-input">
+                <p>Formulaire</p>
+                <input type="text" name="name" class="a-form-control" 
+                placeholder="Prénom *" required="required" data-error="Le nom complet est requis.">
+                <input type="text" name="name" class="a-form-control" 
+                placeholder="Nom complet *" required="required" data-error="Le nom complet est requis.">
+                <input type="textarea" name="name" class="a-form-control" 
+                placeholder="Votre message *" required="required" data-error="Le nom complet est requis.">
+            
+                <div class="m-sendForm">
+                    <button class="a-sendForm" value="">Envoyer</button>
+                </div>
+            </div>
+
+        </form>
+
+        <!--END Contact form-->
+    </div>
+
+
+
+
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+
+<script>
+     $(document).ready(function() {
+
+        var position = $(window).scrollTop();
+     $(window).scroll(function() {
+                if ($(this).scrollTop() < 50) {
+                    var scroll = $(window).scrollTop();
+                    if (scroll > position) {
+
+                        $('.m-navbar').addClass("-animationScrollB");
+                        $('.m-navbar').removeClass("-animationScrollT");
+                    } else {
+
+                        $('.m-navbar').addClass("-animationScrollT");
+                        $('.m-navbar').removeClass("-animationScrollB");
+                    }
+                    position = scroll;
+
+                }
+
+
+            });
+        });
+</script>
+
+</body>
+
+</html>

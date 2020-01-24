@@ -9,6 +9,7 @@
 @import"./atomes/_titles";
 @import"./atomes/_images";
 @import"./atomes/_playbar";
+@import"./atomes/form";
 
 
 //Molecules
@@ -20,6 +21,7 @@
 
 @import"molecules/_playbar.scss";
 
+@import"molecules/form.scss";
 
 //Organismes
 @import"organismes/_album.scss";
