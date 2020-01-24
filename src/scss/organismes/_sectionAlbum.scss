@@ -1,14 +1,29 @@
 .o-sectionD{
-    display: flex;
     width: 60%;
-    justify-content: space-between;
-    vertical-align: middle;
-
+    padding : 0 5px 5px 5px;
+    .m-infoMusique{
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #707070;
+        .m-titre{
+            display: flex;
+        }
+    }
 }
 
 .o-sectionG{
+    display: inline-block;
+    justify-content: center;
     width: 40%;
     text-align: center;
     vertical-align: middle;
-    
+    .-width {
+        width: 50%;
+        margin: auto;
+    }
+    .a-buttonImportant{
+        margin: 10px;;
+    }
 }
